@@ -13,3 +13,4 @@ C:\Javier\EvalGosocket\OfflineSyncBackend\src\Application\obj\Debug\net8.0\Appli
 C:\Javier\EvalGosocket\OfflineSyncBackend\src\Application\obj\Debug\net8.0\refint\Application.dll
 C:\Javier\EvalGosocket\OfflineSyncBackend\src\Application\obj\Debug\net8.0\Application.pdb
 C:\Javier\EvalGosocket\OfflineSyncBackend\src\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Javier\EvalGosocket\OfflineSyncBackend\src\Application\obj\Debug\net8.0\Application.sourcelink.json

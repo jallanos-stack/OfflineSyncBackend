@@ -17,3 +17,4 @@ C:\Javier\EvalGosocket\OfflineSyncBackend\src\Infrastructure\obj\Debug\net8.0\re
 C:\Javier\EvalGosocket\OfflineSyncBackend\src\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\Javier\EvalGosocket\OfflineSyncBackend\src\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
 C:\Javier\EvalGosocket\OfflineSyncBackend\src\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Javier\EvalGosocket\OfflineSyncBackend\src\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json

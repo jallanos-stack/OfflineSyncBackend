@@ -9,3 +9,4 @@ C:\Javier\EvalGosocket\OfflineSyncBackend\src\Domain\obj\Debug\net8.0\Domain.dll
 C:\Javier\EvalGosocket\OfflineSyncBackend\src\Domain\obj\Debug\net8.0\refint\Domain.dll
 C:\Javier\EvalGosocket\OfflineSyncBackend\src\Domain\obj\Debug\net8.0\Domain.pdb
 C:\Javier\EvalGosocket\OfflineSyncBackend\src\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Javier\EvalGosocket\OfflineSyncBackend\src\Domain\obj\Debug\net8.0\Domain.sourcelink.json

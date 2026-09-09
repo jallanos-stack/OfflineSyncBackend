@@ -1,4 +1,6 @@
+using Application.Interfaces;
 using Domain.Repositories;
+using Infrastructure.Messaging;
 using Infrastructure.Persistence;
 using Infrastructure.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +19,8 @@ public static class DependencyInjection
             options.UseSqlite(connectionString));
 
         services.AddScoped<IRequestRepository, RequestRepository>();
+        services.AddSingleton<IEventBus, InMemoryEventBus>();
+        services.AddHostedService<OutboxProcessor>();
 
         return services;
     }

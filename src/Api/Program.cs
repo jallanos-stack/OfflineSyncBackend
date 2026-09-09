@@ -1,9 +1,19 @@
 using Application;
 using Infrastructure;
 using Infrastructure.Persistence;
-using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Configuración de Serilog
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .Enrich.FromLogContext()
+    .WriteTo.Console()
+    .WriteTo.File("logs/offlinesync-.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
 
 builder.Services.AddControllers();
 builder.Services.AddApplication();
@@ -22,7 +32,7 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-// Asegurar la creación de la base de datos SQLite
+// Asegurar la creación de la base de datos
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
@@ -38,8 +48,21 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+app.UseSerilogRequestLogging();
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
-app.Run();
+try
+{
+    Log.Information("Iniciando OfflineSync API...");
+    app.Run();
+}
+catch (Exception ex)
+{
+    Log.Fatal(ex, "La aplicación falló inesperadamente.");
+}
+finally
+{
+    Log.CloseAndFlush();
+}
