@@ -90,3 +90,28 @@ Sincronizaciòn: Desactivar el modo offline (o activar el backend). Presionar Si
 
 
 
+
+Pruebas:
+Backend desde swagger:
+El API se ejecuta en http://localhost:5206/swagger/index.html
+
+<img width="1550" height="950" alt="image" src="https://github.com/user-attachments/assets/c9750ab9-88f0-4660-9370-e2d4228d8522" />
+
+Crear una solicitud desde el swagger
+
+<img width="683" height="965" alt="image" src="https://github.com/user-attachments/assets/26d8566c-a7cc-43cc-a40f-866805f0f799" />
+
+
+Consultar una solicitud por medio de su id
+<img width="743" height="959" alt="image" src="https://github.com/user-attachments/assets/52994b11-ea87-49fd-bdb3-6fc51147120d" />
+
+
+Pruebas FrontEnd
+<img width="1015" height="997" alt="image" src="https://github.com/user-attachments/assets/c4a4671d-d4ab-4efd-a0d7-d0ef12a0b060" />
+
+
+
+
+
+
+
