@@ -15,6 +15,17 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog();
 
+// Configurar CORS para permitir peticiones desde la aplicación cliente
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowClient", policy =>
+    {
+        policy.WithOrigins("http://localhost:5173", "http://localhost:3000")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 builder.Services.AddControllers();
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
@@ -32,7 +43,6 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-// Asegurar la creación de la base de datos
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
@@ -49,6 +59,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseSerilogRequestLogging();
+app.UseCors("AllowClient"); // Activar CORS
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();

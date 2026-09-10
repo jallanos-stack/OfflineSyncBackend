@@ -6038,3 +6038,137 @@ FROM "OutboxMessages" AS "o"
 WHERE "o"."ProcessedOnUtc" IS NULL
 LIMIT @__p_0
 2026-09-09 14:04:25.587 -05:00 [INF] Application is shutting down...
+2026-09-09 15:41:00.611 -05:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2026-09-09 15:41:00.758 -05:00 [INF] Iniciando OfflineSync API...
+2026-09-09 15:41:00.936 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-09-09 15:41:01.096 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:41:01.214 -05:00 [INF] Now listening on: http://localhost:5206
+2026-09-09 15:41:01.221 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-09 15:41:01.224 -05:00 [INF] Hosting environment: Development
+2026-09-09 15:41:01.225 -05:00 [INF] Content root path: C:\Javier\EvalGosocket\OfflineSyncBackend\src\Api
+2026-09-09 15:41:06.178 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:41:11.203 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:41:16.229 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:41:21.251 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:41:26.265 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:41:27.239 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger - null null
+2026-09-09 15:41:27.309 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger - 301 0 null 75.1403ms
+2026-09-09 15:41:27.341 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/index.html - null null
+2026-09-09 15:41:27.503 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/index.html - 200 null text/html;charset=utf-8 161.6505ms
+2026-09-09 15:41:27.843 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - null null
+2026-09-09 15:41:28.023 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 180.1716ms
+2026-09-09 15:41:31.275 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:41:36.294 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:41:41.307 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:41:46.330 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:41:51.343 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:41:56.353 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:42:01.373 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:42:06.378 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:42:11.391 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:42:16.409 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:42:21.410 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:42:26.423 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:42:31.428 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:42:36.456 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:42:41.475 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:42:46.496 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:42:51.520 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
+2026-09-09 15:42:56.532 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "o"."Id", "o"."Content", "o"."Error", "o"."OccurredOnUtc", "o"."ProcessedOnUtc", "o"."Type"
+FROM "OutboxMessages" AS "o"
+WHERE "o"."ProcessedOnUtc" IS NULL
+LIMIT @__p_0
