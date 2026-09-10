@@ -1,14 +1,31 @@
 OfflineSync Client - React + TypeScript
 
-Aplicación cliente de tipo Offline-First construida con React (Vite) y TypeScript. 
-La aplicación permite la creación, almacenamiento local y sincronización asíncrona de solicitudes con una API backend desarrollada en .NET 10, garantizando el funcionamiento ininterrumpido sin importar el estado de la conexión a internet (o a la API).
+Backend
 
-Tech Stack - Frontend
+Clean Architecture: Separación clara de responsabilidades en 4 capas (Domain, Application, Infrastructure, Api).
+
+Entity Framework Core 8 & SQLite: Persistencia de datos y soporte para transacciones atómicas.
+
+Transactional Outbox: Garantía de consistencia eventual al guardar entidades y eventos en la misma transacción.
+
+Polly: Manejo de resiliencia mediante políticas de reintento (Retry Pattern) con retardo exponencial.
+
+Serilog: Registro de logs estructurado y trazable en consola y archivos.
+
+FluentValidation & Result Pattern: Validación fluida de entradas y manejo explícito de errores de negocio sin excepciones.
+
+
+Frontend
 
 Core: React 18/19, TypeScript, Vite.
+
 Persistencia Local: Dexie.js (Wrapper optimizado sobre IndexedDB).
+
 Hooks React-Dexie: dexie-react-hooks (useLiveQuery para reactividad en tiempo real con IndexedDB).
+
 Cliente HTTP: Axios.
+
+
 
 Arquitectura Offline-First
 
