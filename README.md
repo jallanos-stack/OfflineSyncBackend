@@ -72,7 +72,7 @@ Prerrequisitos
 
 Node.js v18+ y npm.
 
-Backend en .NET 8 ejecutándose (Puerto HTTPS por defecto: https://localhost:5206).
+Backend en .NET 10 ejecutándose (Puerto HTTPS por defecto: https://localhost:5206).
 
 Pasos
 1. Entrar al directorio del cliente (client) e instalar dependencias: (npm install).
